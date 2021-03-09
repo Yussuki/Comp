@@ -6,17 +6,17 @@ import comp.ErrorSignaler;
 public class Lexer {
 
     public Lexer( char []input, ErrorSignaler error ) {
-        this.input = input;
-          // add an end-of-file label to make it easy to do the lexer
-        input[input.length - 1] = '\0';
-          // number of the current line
-        lineNumber = 1;
-        tokenPos = 0;
-        lastTokenPos = 0;
-        beforeLastTokenPos = 0;
-        this.error = error;
-        metaobjectName = "";
-      }
+      this.input = input;
+        // add an end-of-file label to make it easy to do the lexer
+      input[input.length - 1] = '\0';
+        // number of the current line
+      lineNumber = 1;
+      tokenPos = 0;
+      lastTokenPos = 0;
+      beforeLastTokenPos = 0;
+      this.error = error;
+      metaobjectName = "";
+    }
 
 
     private static final int MaxValueInteger = 32767;
